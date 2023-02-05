@@ -1,0 +1,27 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "technos_tech:block/ore_extractor"
+        },
+        "facing=east": {
+            "model": "technos_tech:block/ore_extractor",
+            "y": 90
+        },
+        "facing=south": {
+            "model": "technos_tech:block/ore_extractor",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "technos_tech:block/ore_extractor",
+            "y": 270
+        },
+        "facing=up": {
+            "model": "technos_tech:block/ore_extractor",
+            "x": -90
+        },
+        "facing=down": {
+            "model": "technos_tech:block/ore_extractor",
+            "x": 90
+        }
+    }
+}

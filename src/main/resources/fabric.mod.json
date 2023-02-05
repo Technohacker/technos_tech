@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "technos_tech",
+	"version": "${version}",
+	"name": "Techno's Tech",
+	"description": "A simple, opinionated tech mod, designed to encourage a heavily automated play-style",
+	"authors": [
+		"Kevin (Technohacker)"
+	],
+	"contact": {
+		"homepage": "https://github.com/Technohacker/technos-tech",
+		"sources": "https://github.com/Technohacker/technos-tech"
+	},
+	"license": "Apache-2.0",
+	"icon": "assets/technos_tech/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.technohacker.tech.TechnosTechMod"
+		],
+		"client": [
+			"com.technohacker.tech.TechnosTechModClient"
+		]
+	},
+	"mixins": [
+		"technos_tech.mixins.json",
+		{
+			"config": "technos_tech.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.13",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {}
+}
